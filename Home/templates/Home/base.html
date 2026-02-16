@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}HomeBase{% endblock %} </title>
+        <link rel="stylesheet" href="{% static 'home/style/styles.css' %}">
+    </head>
+    <body>
+        <h1>HomeBase</h1>
+        <nav>
+            <a href="{% url 'pomodoro' %}">Pomodoro Timer</a>
+            <span class="space">f</span>
+            <a href="{% url 'workout' %}">Workout Stuff</a>
+            <span class="space">f</span>
+            <a href="{% url 'agendas' %}">Agenda</a>
+            <span class="space">f</span>
+            <a href="{% url '' %}">Base</a>
+            <span class="space">f</span>
+        </nav>
+        <hr />
+        <div class="box">
+            <h2>Todo list</h2>
+            <ol>
+                <li>Make Agenda's</li>
+                <li>Make Workouts and Workout Timers</li>
+                <li>Make Pomdoro timer</li>
+                <li>Add pictures of Yumi and Swartz</li>
+            </ol>
+        </div>
+        
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
