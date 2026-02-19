@@ -8,12 +8,20 @@ urlpatterns = [
     path('workout', views.workout, name='workout'),
 
     # Agendas
-    path('monday', views.agenda, name='monday'),
-    path('tuesday', views.agenda, name='tuesday'),
-    path('wednesday', views.agenda, name='wednesday'),
-    path('thursday', views.agenda, name='thursday'),
-    path('friday', views.agenda, name='friday'),
-    path('saturday', views.agenda, name='saturday'),
-    path('sunday', views.agenda, name='sunday'),
+    path('agenda', views.agendas, name='agendas'),
+    path('monday', views.agendas, name='monday'),
+    path('tuesday', views.agendas, name='tuesday'),
+    path('wednesday', views.agendas, name='wednesday'),
+    path('thursday', views.agendas, name='thursday'),
+    path('friday', views.agendas, name='friday'),
+    path('saturday', views.agendas, name='saturday'),
+    path('sunday', views.agendas, name='sunday'),
+    
+    
    
 ]
+
+
+'''
+    
+    '''
