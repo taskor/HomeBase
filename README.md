@@ -1,2 +1,3 @@
 # HomeBase
-My personal operating system
+
+This is HomeBase 0.0, my personal operating system
